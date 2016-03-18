@@ -22,16 +22,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-//Current internal version number.
-
-$internalversion = 2016030201;
-
 //Initialize $plugin object if it hasn't been already
 $plugin = (isset($plugin) ? $plugin : new stdClass());
 
-//Plugin version should normally be the same as the internal version. 
-//If an admin wants to install with an older version number, however, set that here. 
-$plugin->version = $internalversion;
+$plugin->version = 2016030201;
 $plugin->requires = 2010112400;  // Version 2.0 .
 $plugin->cron = 0;
 $plugin->component = 'block_panopto';
